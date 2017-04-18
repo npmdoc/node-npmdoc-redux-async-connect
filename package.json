@@ -1,1 +1,39 @@
-{     "devDependencies": {         "redux-async-connect": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-redux-async-connect",     "homepage": "https://github.com/npmdoc/node-npmdoc-redux-async-connect",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-redux-async-connect.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [redux-async-connect (v0.1.13)](https://github.com/Rezonans/redux-async-connect) [![npm package](https://img.shields.io/npm/v/npmdoc-redux-async-connect.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-redux-async-connect) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-redux-async-connect.svg)](https://travis-ci.org/npmdoc/node-npmdoc-redux-async-connect)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "redux-async-connect": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-redux-async-connect",
+    "keywords": [
+        "documentation",
+        "redux-async-connect"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_redux_async_connect.js",
+    "name": "npmdoc-redux-async-connect",
+    "nameAlias": "npmdoc_redux_async_connect",
+    "nameOriginal": "npmdoc-redux-async-connect",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-redux-async-connect.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
