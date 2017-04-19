@@ -1,4 +1,7 @@
-# api documentation for  [redux-async-connect (v0.1.13)](https://github.com/Rezonans/redux-async-connect)  [![npm package](https://img.shields.io/npm/v/npmdoc-redux-async-connect.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-redux-async-connect) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-redux-async-connect.svg)](https://travis-ci.org/npmdoc/node-npmdoc-redux-async-connect)
+# npmdoc-redux-async-connect
+
+#### api documentation for  [redux-async-connect (v0.1.13)](https://github.com/Rezonans/redux-async-connect)  [![npm package](https://img.shields.io/npm/v/npmdoc-redux-async-connect.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-redux-async-connect) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-redux-async-connect.svg)](https://travis-ci.org/npmdoc/node-npmdoc-redux-async-connect)
+
 #### It allows you to request async data, store them in redux state and connect them to your react component.
 
 [![NPM](https://nodei.co/npm/redux-async-connect.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/redux-async-connect)
