@@ -1,6 +1,6 @@
 # npmdoc-redux-async-connect
 
-#### api documentation for  [redux-async-connect (v0.1.13)](https://github.com/Rezonans/redux-async-connect)  [![npm package](https://img.shields.io/npm/v/npmdoc-redux-async-connect.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-redux-async-connect) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-redux-async-connect.svg)](https://travis-ci.org/npmdoc/node-npmdoc-redux-async-connect)
+#### api documentation for  [redux-async-connect (v1.0.0-rc4)](https://github.com/Rezonans/redux-async-connect)  [![npm package](https://img.shields.io/npm/v/npmdoc-redux-async-connect.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-redux-async-connect) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-redux-async-connect.svg)](https://travis-ci.org/npmdoc/node-npmdoc-redux-async-connect)
 
 #### It allows you to request async data, store them in redux state and connect them to your react component.
 
@@ -21,15 +21,39 @@
 ```json
 
 {
-    "author": {
-        "name": "Rodion Salnik",
-        "url": "http://brocoders.com"
+    "name": "redux-async-connect",
+    "version": "1.0.0-rc4",
+    "description": "It allows you to request async data, store them in redux state and connect them to your react component.",
+    "main": "lib/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/Rezonans/redux-async-connect.git"
     },
+    "scripts": {
+        "build": "babel ./modules -d lib --ignore '__tests__'",
+        "lint": "eslint modules",
+        "start": "babel-node example/server.js",
+        "test": "npm run lint && karma start",
+        "prepublish": "node ./npm-scripts/postinstall.js"
+    },
+    "keywords": [
+        "redux",
+        "react",
+        "connect",
+        "async",
+        "props"
+    ],
+    "author": "Rodion Salnik (http://brocoders.com)",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/Rezonans/redux-async-connect/issues"
     },
-    "dependencies": {},
-    "description": "It allows you to request async data, store them in redux state and connect them to your react component.",
+    "homepage": "https://github.com/Rezonans/redux-async-connect",
+    "peerDependencies": {
+        "react": "0.14.x",
+        "react-router": "2.x.x",
+        "react-redux": "4.x.x"
+    },
     "devDependencies": {
         "babel-cli": "^6.4.5",
         "babel-core": "^6.4.5",
@@ -39,7 +63,6 @@
         "babel-preset-react": "^6.3.13",
         "babel-preset-stage-0": "^6.3.13",
         "eslint": "1.4.1",
-        "eslint-config-airbnb": "^3.1.0",
         "eslint-config-rackt": "1.0.0",
         "eslint-plugin-react": "3.3.2",
         "expect": "^1.12.0",
@@ -61,48 +84,10 @@
         "react-router": "2.0.0-rc5",
         "rimraf": "^2.4.2",
         "webpack": "^1.12.6",
-        "webpack-dev-middleware": "^1.2.0"
+        "webpack-dev-middleware": "^1.2.0",
+        "eslint-config-airbnb": "^3.1.0"
     },
-    "directories": {},
-    "dist": {
-        "shasum": "0a981f2e1952e4ad7a56cb9d1d305d8668cc808b",
-        "tarball": "https://registry.npmjs.org/redux-async-connect/-/redux-async-connect-0.1.13.tgz"
-    },
-    "gitHead": "7d273f0b926cf668f1cfd23c379c917aca35b40f",
-    "homepage": "https://github.com/Rezonans/redux-async-connect",
-    "keywords": [
-        "redux",
-        "react",
-        "connect",
-        "async",
-        "props"
-    ],
-    "license": "MIT",
-    "main": "lib/index.js",
-    "maintainers": [
-        {
-            "name": "sarssokol"
-        }
-    ],
-    "name": "redux-async-connect",
-    "optionalDependencies": {},
-    "peerDependencies": {
-        "react": "0.14.x",
-        "react-router": "2.x.x",
-        "react-redux": "4.x.x"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/Rezonans/redux-async-connect.git"
-    },
-    "scripts": {
-        "build": "babel ./modules -d lib --ignore '__tests__'",
-        "lint": "eslint modules",
-        "prepublish": "node ./npm-scripts/postinstall.js",
-        "start": "babel-node example/server.js",
-        "test": "npm run lint && karma start"
-    },
-    "version": "0.1.13"
+    "bin": {}
 }
 ```
 
